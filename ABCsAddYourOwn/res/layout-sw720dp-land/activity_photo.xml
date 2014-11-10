@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <ImageView
+        android:id="@+id/ivCVImportPict"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/current_item"
+        android:padding="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/abcs_add_your_own_squ_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bCVTakePict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/blue_button"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/take_picture"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bCVFilePict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/blue_button"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/pict_from_file"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bCVSaveToDB"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:background="@drawable/blue_circle_button"
+            android:enabled="false"
+            android:soundEffectsEnabled="true"
+            android:text="@string/save"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etCVObjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:focusableInTouchMode="true"
+            android:hint="@string/enter_object_name"
+            android:imeOptions="actionNext"
+            android:inputType="textAutoComplete"
+            android:nextFocusForward="@+id/etCVCatName"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        </EditText>
+
+        <AutoCompleteTextView
+            android:id="@+id/etCVCatName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:focusableInTouchMode="true"
+            android:hint="@string/enter_category"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoComplete"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</LinearLayout>

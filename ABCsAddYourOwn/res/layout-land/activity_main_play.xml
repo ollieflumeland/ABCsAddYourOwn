@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainPlay" >
+
+    <LinearLayout
+        android:id="@+id/llLeftRight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <ViewFlipper
+            android:id="@+id/vfMVFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".75" >
+
+            <!-- 2 child views to flip between -->
+            <!-- Layout 1 for 1st Screen -->
+
+            <RelativeLayout
+                android:id="@+id/rrVF1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/ivMVPict1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/current_item"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/swan" />
+
+                <TextView
+                    android:id="@+id/tvMVItemLetter1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignBottom="@id/ivMVPict1"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/letter_background"
+                    android:gravity="center"
+                    android:minWidth="70dp"
+                    android:text="@string/s_lc"
+                    android:textColor="@color/yellow"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- Layout 2 for 2nd Screen -->
+
+            <RelativeLayout
+                android:id="@+id/rrVF2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/ivMVPict2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/current_item"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/elephant" />
+
+                <TextView
+                    android:id="@+id/tvMVItemLetter2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignBottom="@id/ivMVPict2"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/letter_background"
+                    android:gravity="center"
+                    android:minWidth="70dp"
+                    android:text="@string/e_lc"
+                    android:textColor="@color/yellow"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </ViewFlipper>
+
+        <LinearLayout
+            android:id="@+id/llRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bMVOption1"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/pastel_blue_button"
+                android:padding="2dp"
+                android:text="@string/option"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/bMVOption2"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/pastel_green_button"
+                android:padding="2dp"
+                android:text="@string/option"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/bMVOption3"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/pastel_purple_button"
+                android:padding="2dp"
+                android:text="@string/option"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvMVAlpha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/alphabet_lcs"
+                android:textColor="@color/blue"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llsounds"
+                style="android:style/ButtonBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <Button
+                    android:id="@+id/bMVAbc"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/pink_button"
+                    android:drawableRight="@drawable/ic_sound"
+                    android:enabled="true"
+                    android:padding="5dp"
+                    android:text="@string/abc"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/bMVObSound"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/yellow_button"
+                    android:drawableRight="@drawable/ic_sound"
+                    android:enabled="true"
+                    android:padding="5dp"
+                    android:text="@string/obj"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRevealShow"
+                style="android:style/ButtonBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <Button
+                    android:id="@+id/bMVReveal"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/green_button"
+                    android:padding="3dp"
+                    android:text="@string/reveal"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/bMVRandom"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/blue_button"
+                    android:drawableRight="@drawable/ic_rand"
+                    android:padding="3dp"
+                    android:text="@string/rand"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMVDir"
+                style="android:style/ButtonBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <Button
+                    android:id="@+id/bMVdescend"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/orange_button"
+                    android:drawableLeft="@drawable/ic_previous_item"
+                    android:padding="3dp"
+                    android:text="@string/prev"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/bMVascend"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/red_button"
+                    android:drawableRight="@drawable/ic_next_item"
+                    android:padding="3dp"
+                    android:text="@string/next"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMVAniLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/letter_background"
+        android:gravity="center"
+        android:minWidth="0dp"
+        android:text=""
+        android:textColor="@color/yellow"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ABCs - Add Your Own</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="alphabet_lc">abcdefghijklmnopqrstuvwxyz</string>
+    <string name="alphabet_lcs">a b c d e f g h i j k l m n o p q r s t u v w x y z</string>
+    <string name="alphabet_uc">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="alphabet_ucs">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</string>
+    <string name="a_lc">a</string>
+    <string name="b_lc">b</string>
+    <string name="c_lc">c</string>
+    <string name="d_lc">d</string>
+    <string name="e_lc">e</string>
+    <string name="f_lc">f</string>
+    <string name="g_lc">g</string>
+    <string name="h_lc">h</string>
+    <string name="i_lc">i</string>
+    <string name="j_lc">j</string>
+    <string name="k_lc">k</string>
+    <string name="l_lc">l</string>
+    <string name="m_lc">m</string>
+    <string name="n_lc">n</string>
+    <string name="o_lc">o</string>
+    <string name="p_lc">p</string>
+    <string name="q_lc">q</string>
+    <string name="r_lc">r</string>
+    <string name="s_lc">s</string>
+    <string name="t_lc">t</string>
+    <string name="u_lc">u</string>
+    <string name="v_lc">v</string>
+    <string name="w_lc">w</string>
+    <string name="x_lc">x</string>
+    <string name="y_lc">y</string>
+    <string name="z_lc">z</string>
+    <string name="option">Option</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="current_item">current item</string>
+    <string name="abc">abc</string>
+    <string name="reveal">Show</string>
+    <string name="rand">Rand</string>
+    <string name="next">Next</string>
+    <string name="prev">Prev</string>
+    <string name="obj">Obj</string>
+    <string name="add_photo">Add A Photo</string>
+    <string name="new_photo">abcayo_add_photo</string>
+    <string name="take_photo">Take or Select Photo</string>
+    <string name="add_snd_to_pic">Add a sound effect to this file?</string>
+    <string name="add_sound">Add A Sound Effect</string>
+    <string name="new_sound">abcayo_add_sound</string>
+    <string name="create_sound">Create Sound</string>
+    <string name="preferences">Make The App Your Own</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="pict_from_file">Add File Picture</string>
+    <string name="enter_object_name">Enter Object Name</string>
+    <string name="enter_category">Enter Category</string>
+    <string name="save">Save</string>
+    <string name="quit">abcayo_quit</string>
+    <string name="quit_app">Quit</string>
+    <string name="close_program">Close Program</string>
+    <string name="record">Rec</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="search_object_name">Search by object name:</string>
+    <string name="category">Category</string>
+    <string name="object">Object Name</string>
+    <string name="search">Search</string>
+    <string name="select_cats">Select Categories</string>
+    <string name="yes_add_snd">Yes</string>
+    <string name="no_back">No, main game</string>
+    <string name="no_more_photo">No, add more pictures</string>
+    <string name="help">Using ABC Add Your Own</string>
+    <string name="info">abcayo_info</string>
+    <string name="about">Thank you for installing ABC Add Your Own
+        \nThis app allows you to customise it by adding your own pictures and sound effects.
+        \nFor best results please make sure your device is setup with google UK english female voice as the default text to speech engine. 
+        \nA selection of items we recommend you add to personalise your app
+        \n - Children
+        \n - Parents
+        \n - Relatives
+        \n - Toys
+        \n - Vehicles
+        \n - House
+        \n - Places
+        \nIt is perfectly OK to add more than one item beginning with the same letter to the same category. The app will just randomly choose between them.
+		\nIf your added photos do not seem to be appearing, go to the select categories option and make sure the right category has been selected to display. 
+		\nPhotos taken by the amp are stored in two locations: 
+		\nA cropped and prepared version will be stored privately for exclusive use in the game only. Removing the game will also remove these photos. 
+		\nAn uncropped photo will also be placed in the external media folder, these photos should be viewable in your picture galleries and can be edited or deleted manually without affect the app. They will have a name beginning ABCsAYO_temp.
+		\nWe recommend that you limit your child\'s usage of the app to 20 mins max per day.</string>
+</resources>

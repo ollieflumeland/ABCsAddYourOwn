@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bSVRecord"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:drawableRight="@drawable/av_record"
+            android:gravity="center"
+            android:text="@string/record"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bSVStop"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:drawableRight="@drawable/av_stop"
+            android:gravity="center"
+            android:text="@string/stop"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bSVPlay"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:drawableRight="@drawable/av_play"
+            android:gravity="center"
+            android:text="@string/play"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivSVObjImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bSVSearch"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/current_item"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/abcs_add_your_own_squ_icon" />
+
+    <AutoCompleteTextView
+        android:id="@+id/tvSVSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="@string/search_object_name"
+        android:imeOptions="actionDone"
+        android:inputType="textAutoComplete" >
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/bSVSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvSVSearch"
+        android:layout_alignTop="@+id/tvSVSearch"
+        android:layout_margin="5dp"
+        android:background="@drawable/blue_button"
+        android:gravity="center"
+        android:text="@string/search"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/bSVSave"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignRight="@+id/tvSVSearch"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/blue_circle_button"
+        android:enabled="false"
+        android:soundEffectsEnabled="true"
+        android:text="@string/save"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvSVName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSVSearch"
+        android:layout_alignTop="@+id/bSVSave"
+        android:text="@string/object" />
+
+    <TextView
+        android:id="@+id/tvSVCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bSVSave"
+        android:layout_alignLeft="@+id/tvSVName"
+        android:text="@string/category" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="pref_key_settings" >
+
+    <PreferenceCategory android:title="@string/close_program" >
+        <Preference
+            android:icon="@drawable/ic_action_remove"
+            android:key="@string/quit"
+            android:summary="Exit the program"
+            android:title="@string/quit_app" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/help">
+        <Preference android:icon="@drawable/action_help" android:key="@string/info" android:summary="Setting up your app" android:title="@string/help" />
+    </PreferenceCategory><PreferenceCategory android:title="@string/select_cats">
+    <MultiSelectListPreference android:key="catChoice" android:title="@string/select_cats" android:icon="@drawable/collections_list" android:summary="Choose the categories to include" android:defaultValue="@array/categories_defaults" android:entries="@array/categories" android:entryValues="@array/categories_values" />
+     </PreferenceCategory><PreferenceCategory android:title="@string/add_photo" >
+        <Preference
+            android:icon="@drawable/ic_action_photo"
+            android:key="@string/new_photo"
+            android:summary="Take/add photo, label it and add it to app"
+            android:title="@string/take_photo" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/add_sound" >
+        <Preference
+            android:icon="@drawable/ic_action_microphone"
+            android:key="@string/new_sound"
+            android:summary="Add a sound effect to a object"
+            android:title="@string/create_sound" />
+    </PreferenceCategory>
+    
+     
+
+</PreferenceScreen>
